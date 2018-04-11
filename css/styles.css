@@ -1,4 +1,9 @@
-body {font-family: "Gabriela"; text-align: center}
+body {
+	font-family: "Gabriela"; 
+	text-align: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url("/images/bg.png");
+}
 
 h1 {
 	font-family: "Fredericka the Great";
