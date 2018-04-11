@@ -23,6 +23,11 @@ p {
 
 #section {
 	text-align: center;
+	float: right;
+}
+
+.img {
+	margin: 0;
 }
 
 .thmb {
@@ -36,7 +41,6 @@ p {
 }
 
 .rings {
-	float: left;
 	display: block;
 	margin: 0;
 	padding: 0px;
@@ -61,12 +65,7 @@ p {
     margin: 0 auto;
 }
 
-.carousel-caption > a:link, a:hover, a:active, a:visited {
-	color: pink;
-	font-size: 24px;
-}
-
-.footer > a:link, a:hover, a:active, a:visited {
+.footer > a:link, .footer > a:hover, .footer > a:active, .footer > a:visited {
 	color: hotpink;
 	font-size: 26px;
 	font-style: italic;
@@ -74,4 +73,129 @@ p {
 
 .footer {
 	padding: 10px;
+}
+
+
+
+@media(max-width: 768px) {
+	h1 {
+		font-size: 40pt;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 15px;
+	}
+	.modal-lg {
+	    width: 70%; /* respsonsive width */
+    	margin-left:6%; /* width/2)  */
+	}
+	.footer > a:link, .footer > a:hover, .footer > a:active, .footer > a:visited {
+		font-size: 20px;
+	}
+}
+
+
+@media(max-width: 480px) {
+	h1 {
+		font-size: 20pt;
+	}
+	h3 {
+		font-size: 15px;
+	}
+	p {
+		font-size: 10px;
+	}
+	.thmb {
+		left: 20%;
+	}
+	.modal-lg {
+	    width: 70%; /* respsonsive width */
+    	margin-left:6%; /* width/2)  */
+	}
+	.footer > a:link, .footer > a:hover, .footer > a:active, .footer > a:visited {
+		font-size: 18px;
+	}
+
+}
+
+
+
+
+
+/*
+ * Basic button style
+ */
+.btn {
+  box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
+  border-radius: 3px;
+  border: 1px solid;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 8px;
+  position: relative;
+
+  font-size: 12px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+/*
+ * Counter button style
+ */
+.btn-counter { margin-right: 39px; }
+.btn-counter:after,
+.btn-counter:hover:after { text-shadow: none; }
+.btn-counter:after {
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  background-color: #eee;
+  padding: 0 8px;
+  color: #777;
+  content: attr(data-count);
+  left: 100%;
+  margin-left: 8px;
+  margin-right: -13px;
+  position: absolute;
+  top: -1px;
+}
+.btn-counter:before {
+  transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+
+  background-color: #eee;
+  border: 1px solid #d3d3d3;
+  border-right: 0;
+  border-top: 0;
+  content: '';
+  position: absolute;
+  right: -13px;
+  top: 5px;
+  height: 6px;
+  width: 6px;
+  z-index: 1;
+  zoom: 1;
+}
+/*
+ * Custom styles
+ */
+.btn {
+  background-color: #dbdbdb;
+  border-color: #bbb;
+  color: #666;
+}
+.btn:hover,
+.btn.active {
+  text-shadow: 0 1px 0 #b12f27;
+  background-color: #f64136;
+  border-color: #b12f27;
+}
+.btn:active { box-shadow: 0 0 5px 3px rgba(0,0,0,0.2) inset; }
+.btn span { color: #f64136; }
+.btn:hover, .btn:hover span,
+.btn.active, .btn.active span { color: #eeeeee; }
+.btn:active span {
+  color: #b12f27;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
