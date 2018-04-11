@@ -1,0 +1,29 @@
+body {font-family: Arial, Helvetica, sans-serif; text-align: center}
+
+.rings {
+	bottom: 0;
+	right: 0;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	height: 200px;
+	text-align: center;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-caption > a:link, a:hover, a:active, a:visited {
+	color: pink;
+	font-size: 24px;
+}
+
+.footer > a:link, a:hover, a:active, a:visited {
+	color: hotpink;
+	font-size: 26px;
+	font-style: italic;
+}
+
+.footer {
+	padding: 10px;
+}
