@@ -1,4 +1,20 @@
-body {font-family: Arial, Helvetica, sans-serif; text-align: center}
+body {font-family: "Gabriela"; text-align: center}
+
+h1 {
+	font-family: "Fredericka the Great";
+	font-size: 70px;
+}
+
+h3 {
+	font-size: 29px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+p {
+	font-size: 18px;
+}
 
 .rings {
 	bottom: 0;
